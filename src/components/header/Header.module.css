@@ -1,0 +1,14 @@
+.header {
+	background-color: #33424F;
+	margin-bottom: .5em;
+	min-height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* font-size: calc(10px + 2vmin); */
+	width: 100%;
+	/* position: sticky;
+	top: 0;
+	left: 0; */
+	z-index: 1000;
+ }

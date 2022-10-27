@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+
+
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+	color: #fe7202;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after{
+	border-bottom: 2px solid #fe7202 ;
+}
+.ant-menu-light .ant-menu-item:hover, .ant-menu-light .ant-menu-item-active, .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-light .ant-menu-submenu-active, .ant-menu-light .ant-menu-submenu-title:hover{
+	color: #fe7202;
+}
+.ant-menu-horizontal > .ant-menu-item a{
+	color: #fff;
+}
+.ant-menu-horizontal > .ant-menu-item a:focus{
+	color: #f45e1e;
+}
+.ant-menu-horizontal > .ant-menu-item a:hover{
+	color: #f45e1e;
+}
+.ant-menu-horizontal > .ant-menu-submenu a{
+	color: #fff;
+}
+.ant-menu-horizontal > .ant-menu-submenu a:focus{
+	color: #f45e1e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-menu-horizontal > .ant-menu-submenu a:hover{
+	color: #f45e1e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.ant-btn-primary {
+	color: #fff;
+	border-color: #fe7202;
+	background: #fe7202;
+	text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+	box-shadow: 0 2px #0000000b;
+}
+.ant-btn-primary:hover{
+	border-color: #f45e1e ;
+	background: #f45e1e ;
+}
+.ant-btn-primary:active{
+	border-color: #f45e1e ;
+	background: #f45e1e ;
+}
+.ant-tabs-tab{
+	color: #fff;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+	color: #fe7202;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 44px;
+	border-bottom: 2px solid #fe7202;
+	z-index: 100;
+
+}
+.ant-tabs-tab:hover{
+	color: #f45e1e;
+}
+.ant-tabs-content-holder{
+	color: #ccc;
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color: #f45e1e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+address{
+	margin-bottom: 0;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/* h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
+/*--------------------*/
+
+.app{
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+}
+.container{
+  margin: 0 auto;
+  width: 95%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-title{
+	position: relative;
+	margin: 0 30px;
+    padding: 30px 0 15px;
+    text-align: center;
+	 margin-bottom: 2em;
+}
+.main-title p{
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.main-title h1{
+	font-size: 3em;
+}
+.main-title::after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -20px;
+	width: 40px;
+	height: 5px;
+	background-color: #ff6600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+.steps-content {
+	min-height: 160px;
+	margin-top: 16px;
+	padding-top: 60px;
+	text-align: center;
+	background-color: #fafafa;
+	border: 1px dashed #e9e9e9;
+	border-radius: 2px;
+ }
+ 
+ .steps-action {
+	margin-top: 24px;
+	position: sticky;
+ }
+
+
+ .avatar-item {
+	margin-right: 24px;
+ }
+ 
+ [class*='-col-rtl'] .avatar-item {
+	margin-right: 0;
+	margin-left: 24px;
+ }

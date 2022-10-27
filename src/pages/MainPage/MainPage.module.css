@@ -1,0 +1,46 @@
+.main{
+	padding-bottom: 3em;
+}
+.mainBox{
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+.mainBox2{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+	padding-top: 2em;
+}
+.mainBox2 div:nth-child(1) p{
+	font-size: 2em;
+	font-weight: 600;
+}
+.stepMain{
+	margin-top: 3em;
+}
+.mainBox3 .faq{
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
+@media screen and (max-width: 1170px) {
+	.mainBox2{
+		justify-content: space-between;
+	}
+	.mainBox2 img{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.mainBox2{
+		flex-direction: column;
+		align-items: center;
+	}
+	.mainBox2 div:nth-child(1) p{
+		text-align: center;
+	}
+	.mainBox2 div:nth-child(2){
+		text-align: center;
+	}
+	
+}
+

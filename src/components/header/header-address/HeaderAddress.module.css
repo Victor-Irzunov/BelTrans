@@ -1,0 +1,62 @@
+.headerAddress{
+	padding: 5px 0px 5px 0px;
+	text-transform: uppercase;
+}
+
+.headerAddress p{
+	margin-bottom: .5em;
+}
+
+.headerPhone{
+	background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+	font-size: 1.5em;
+	padding: 5px 5px 5px 5px;
+	font-weight: 600;
+}
+.headerPhone:hover{
+color: #00fec1;
+}
+.sunday{
+	color: #f80759;
+}
+.headerPhone2{
+	display: none;
+	color: #f45e1e;
+	font-size: 2em;
+}
+@media screen and (max-width: 768px) {
+	.headerPhone{
+		font-size: 1.3em;
+		margin-top: 2em;
+	}
+	address p{
+		font-size: .9em;
+	}
+	address {
+		margin-bottom: 0;
+		border-top: 1px solid #2222221f;
+		margin-top: 0.5em;
+		padding-top: .8em;
+  }
+}
+@media screen and (max-width: 576px) {
+	.headerPhone{
+		display: none;
+		}
+			.headerPhone2{
+		display: block;
+		}
+	address p{
+		font-size: .6em;
+		margin-top: .8em;
+	}
+	.headerAddress img{
+		width: 70px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.ipDel{
+		display: none;
+	}
+}
+
