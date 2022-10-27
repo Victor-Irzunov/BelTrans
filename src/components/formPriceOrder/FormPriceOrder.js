@@ -135,22 +135,19 @@ const FormPriceOrder = ({ obj, setOpenModal, setSelectedRowKeys }) => {
 				<Form.Item
 					name="message"
 					wrapperCol={{
-						offset: 4,
-						span: 16,
+						span: 24,
 					}}
 				>
 					<TextArea
 						showCount
 						maxLength={100}
-						// onChange={onChange}
 						placeholder="Комментарий к заказу"
 					/>
 				</Form.Item>
 
 				<Form.Item
 					wrapperCol={{
-						offset: 4,
-						span: 16,
+						span: 24,
 					}}
 				>
 					<Button type="primary" htmlType="submit">

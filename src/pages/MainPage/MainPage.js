@@ -39,10 +39,10 @@ function MainPage() {
 								style={{ marginTop: '2em' }}
 								gutter={[32, 32]}
 							>
-								<Col sm={24} md={13}>
+								<Col xs={24} sm={24} md={13}>
 									<CarouselSlider />
 								</Col>
-								<Col sm={18} md={8}>
+								<Col xs={15} sm={18} md={8}>
 									<ProgressBar />
 								</Col>
 							</Row>

@@ -181,3 +181,9 @@ img{vertical-align: top;}
 	margin-right: 0;
 	margin-left: 24px;
  }
+
+ @media screen and (max-width: 414px) {
+ .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+	padding: 11px 6px;
+ }
+}

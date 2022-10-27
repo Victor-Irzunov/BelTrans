@@ -7,7 +7,7 @@ import { dataFooter } from '../../../content/Content'
 const TabsComp = () => (
 	<Tabs
 		defaultActiveKey="1"
-		style={{paddingBottom: '2em', paddingTop: '1em'}}
+		style={{paddingBottom: '4em', paddingTop: '1em'}}
 		items={dataFooter.map((el) => {
 			return {
 				label: (
