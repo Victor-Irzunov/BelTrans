@@ -9,11 +9,11 @@ import FormOrder from '../../components/formOrder/FormOrder'
 import CollapseComp from '../../components/collapseComp/CollapseComp'
 import StepComp from '../../components/stepComp/StepComp'
 import { Divider, Tag, Row, Col } from 'antd'
-// import { useScreens } from '../../Constants/constants'
+import { useScreens } from '../../Constants/constants'
 
 function MainPage() {
 	const [isActive, setIsActive] = useState(false)
-	// const screens = useScreens()
+	const screens = useScreens()
 	return (
 		<>
 			{/* Current break point:{' '}
@@ -82,9 +82,14 @@ function MainPage() {
 										<StepComp />
 									</div>
 									<div className={css.faq} id='4'>
-										<Divider orientation="left">
+										{screens.xs ?
 											<h3>Часто задаваемые вопросы по грузоперевозке</h3>
-										</Divider>
+											:
+											<Divider orientation="left">
+												<h3>Часто задаваемые вопросы по грузоперевозке</h3>
+											</Divider>
+										}
+
 										<CollapseComp />
 									</div>
 								</div>

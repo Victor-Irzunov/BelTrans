@@ -1,6 +1,6 @@
-import { Divider } from 'antd';
-import React from 'react';
-import ListComp from '../listComp/ListComp';
+import { Divider } from 'antd'
+import React from 'react'
+import ListComp from '../listComp/ListComp'
 import { useScreens } from '../../Constants/constants'
 
 
