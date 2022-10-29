@@ -3,17 +3,20 @@ import React from 'react';
 import dostavka from './img/dostavka.webp'
 import pereezd from './img/pereezd.webp'
 import mebel from './img/mebel.webp'
+import { useScreens } from '../../Constants/constants'
 
 
-const contentStyle = {
-	height: '40vh',
-	width: '100%',
-	color: '#fff',
-	lineHeight: '40vh',
-	textAlign: 'center',
-	background: '#364d79',
-};
 const CarouselSlider = () => {
+	const screens = useScreens()
+	const contentStyle = {
+		height: '40vh',
+		width: '100%',
+		color: '#fff',
+		// lineHeight: '25vh',
+		textAlign: 'center',
+		background: '#364d79',
+	}
+	if (screens.xs) contentStyle.height = '25vh'
 	return (
 		<div>
 			<Carousel dotPosition='left' effect='fade' autoplay>

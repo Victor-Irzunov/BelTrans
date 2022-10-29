@@ -31,6 +31,13 @@
 	color: #f45e1e;
 }
 
+.ant-menu-item .ant-menu-item-icon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .anticon{
+	font-size: 1.2em;
+}
+
+
+
+
 
 .ant-btn-primary {
 	color: #fff;
