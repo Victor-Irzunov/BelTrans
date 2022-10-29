@@ -43,6 +43,10 @@
 	.mainBox2 div:nth-child(2){
 		text-align: center;
 	}
-	
+	select:focus,
+	textarea:focus,
+	input:focus {
+	font-size: 1em !important;
+	}
 }
 
