@@ -35,6 +35,7 @@
 		flex-direction: column;
 		align-items: center;
 		max-width: 100%;
+		overflow: hidden;
 	}
 	.mainBox2 div:nth-child(1) p{
 		text-align: center;
