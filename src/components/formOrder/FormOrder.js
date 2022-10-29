@@ -109,6 +109,8 @@ const FormOrder = () => {
 		}
 	}
 
+	const dateFormat = 'DD.MM.YYYY'
+
 	return (
 		<Form
 			name="basic"
@@ -118,6 +120,7 @@ const FormOrder = () => {
 			wrapperCol={{
 				span: 16,
 			}}
+			style={{ maxWidth: '100%' }}
 			onFinish={onFinish}
 			onFinishFailed={onFinishFailed}
 			autoComplete="off"
@@ -149,7 +152,7 @@ const FormOrder = () => {
 						label="Выберите число"
 						name="dateMobil"
 					>
-						<DatePicker style={{
+						<DatePicker format={dateFormat} style={{
 							width: '100%',
 						}} />
 					</Form.Item>
@@ -159,6 +162,7 @@ const FormOrder = () => {
 						name="date"
 					>
 						<RangePicker
+							format={dateFormat}
 							style={{
 								width: '100%',
 							}}
@@ -212,8 +216,8 @@ const FormOrder = () => {
 					name='check01'
 					valuePropName="checked"
 					wrapperCol={{
-						offset: 8,
-						span: 12,
+						offset: 2,
+						span: 24,
 					}}
 				>
 					<Checkbox>{check1}</Checkbox>
@@ -224,8 +228,8 @@ const FormOrder = () => {
 					name='check02'
 					valuePropName="checked"
 					wrapperCol={{
-						offset: 8,
-						span: 12,
+						offset: 2,
+						span: 24,
 					}}
 				>
 					<Checkbox>{check2}</Checkbox>
