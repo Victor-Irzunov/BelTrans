@@ -4,7 +4,7 @@ export default class PriceStore {
 	constructor() {
 		this._data = {}
 		this._total = null
-		// this._num = null
+		this._isMobilMenu = false
 		this._dataModal = {}
 		this._isStepFromForm = false
 		makeAutoObservable(this)
@@ -21,9 +21,9 @@ export default class PriceStore {
 	setIsStepFromForm(data) {
 		this._isStepFromForm = data
 	}
-	// setNumInput(data) {
-	// 	this._num = data
-	// }
+	setIsMobilMenu(data) {
+		this._isMobilMenu = data
+	}
 
 
 	get data() {
@@ -38,7 +38,7 @@ export default class PriceStore {
 	get isStepFromForm() {
 		return this._isStepFromForm
 	}
-	// get numInput() {
-	// 	return this._num
-	// }
+	get isMobilMenu() {
+		return this._isMobilMenu
+	}
 }

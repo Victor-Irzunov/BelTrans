@@ -1,18 +1,19 @@
 import { Button, Dropdown, Menu, notification, Badge } from 'antd'
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import AvatarComp from './avatar/AvatarComp'
 import {
 	ExclamationCircleTwoTone,
 	LoginOutlined,
-	MenuOutlined,
 	MenuUnfoldOutlined,
 	MenuFoldOutlined,
 } from '@ant-design/icons'
+import { Context } from '../../../../index'
 import ViewComp from './avatar/viewComp/ViewComp'
 import ModalComp from '../../../modal/ModalComp'
 import NewAccount from '../../newAccount/NewAccount'
 import { useScreens } from '../../../../Constants/constants'
 import MobilMenu from '../../mobilMenu/MobilMenu'
+import { observer } from "mobx-react-lite"
 
 export const openNotification = (placement) => {
 	notification.info({
@@ -26,15 +27,17 @@ export const openNotification = (placement) => {
 }
 
 
-const DropComp = () => {
-	const [open, setOpen] = useState(false);
+const DropComp = observer(() => {
+	const { data } = useContext(Context)
+	const [open, setOpen] = useState(false)
 	const [openModal, setOpenModal] = useState(false)
 	const screens = useScreens()
-	const [collapsed, setCollapsed] = useState(false)
+	// const [collapsed, setCollapsed] = useState(false)
 
 
 	const toggleCollapsed = () => {
-		setCollapsed(!collapsed)
+		// setCollapsed(!collapsed)
+		data.setIsMobilMenu(!data.isMobilMenu)
 	}
 
 	const showDrawer = () => {
@@ -112,7 +115,7 @@ const DropComp = () => {
 						color: '#fff'
 					}}
 				>
-					{collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+					{data.isMobilMenu ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
 				</span>
 				:
 				<Dropdown overlay={menu} placement="bottomRight">
@@ -128,9 +131,9 @@ const DropComp = () => {
 				onClose={onClose}
 			/>
 			{
-				collapsed && <MobilMenu />
+				data.isMobilMenu && <MobilMenu />
 			}
 		</>
 	)
-}
+})
 export default DropComp

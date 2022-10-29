@@ -1,5 +1,5 @@
 import './App.css'
-import React from 'react'
+import React, { useContext } from 'react'
 import { useTransition, animated } from 'react-spring'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Footer from './components/footer/Footer'
@@ -17,9 +17,11 @@ import ErrorPage from './pages/ErrorPage/ErrorPage'
 import OtzyvPage from './pages/OtvyvPage/OtzyvPage'
 import CenyPage from './pages/CenyPage/CenyPage'
 import { observer } from "mobx-react-lite"
+import { Context } from './index'
 
 
-const App = observer(() =>{
+const App = observer(() => {
+  const { data } = useContext(Context)
   // const [loading, setLoading] = useState(true)
   const location = useLocation()
 
@@ -43,12 +45,15 @@ const App = observer(() =>{
   // if (loading) {
   //   return <Spinner />
   // }
+  const fuIsMobilMenu = () => {
+    data.setIsMobilMenu(false)
+  }
 
   return (
     <div className="app">
       <Header />
       <BreadCrumbComp />
-      <main>
+      <main onClick={fuIsMobilMenu}>
         {
           transitions((props, item) => (
             <animated.div style={props}>

@@ -11,12 +11,8 @@ const AvatarComp = () => {
 		<>
 			<span>
 				<Badge dot>
-					{/* {
-						screens.xs ?
-							<UserOutlined />
-							: */}
+				
 							<Avatar icon={<UserOutlined color='orange' />} />
-					{/* } */}
 				</Badge>
 			</span>
 		</>
