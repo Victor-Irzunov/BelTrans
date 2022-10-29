@@ -1,5 +1,5 @@
 import HeaderMenu from './headerMenu/HeaderMenu'
-import { Affix } from 'antd';
+import { Affix } from 'antd'
 import React from 'react'
 import HeaderAddress from './header-address/HeaderAddress'
 import css from './Header.module.css'

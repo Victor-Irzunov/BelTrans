@@ -32,11 +32,9 @@ const DropComp = observer(() => {
 	const [open, setOpen] = useState(false)
 	const [openModal, setOpenModal] = useState(false)
 	const screens = useScreens()
-	// const [collapsed, setCollapsed] = useState(false)
 
 
 	const toggleCollapsed = () => {
-		// setCollapsed(!collapsed)
 		data.setIsMobilMenu(!data.isMobilMenu)
 	}
 
@@ -109,9 +107,9 @@ const DropComp = observer(() => {
 					onClick={toggleCollapsed}
 					style={{
 						position: 'absolute',
-						top: '10px',
-						right: '10px',
-						fontSize: '1.7em',
+						top: '5px',
+						right: '8px',
+						fontSize: '2em',
 						color: '#fff'
 					}}
 				>

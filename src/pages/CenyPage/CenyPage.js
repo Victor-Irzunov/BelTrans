@@ -1,5 +1,5 @@
 import React from 'react'
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet"
 import DividerComp from '../../components/dividerComp/DividerComp'
 import { content } from '../../content/Content'
 import TableComp from '../../components/tableComp/TableComp'

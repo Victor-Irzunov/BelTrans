@@ -32,10 +32,12 @@
 }
 
 .ant-menu-item .ant-menu-item-icon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .anticon{
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
-
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu{
+	padding: 0 17px;
+}
 
 
 
@@ -194,3 +196,10 @@ img{vertical-align: top;}
 	padding: 11px 6px;
  }
 }
+
+
+
+
+
+
+

@@ -9,11 +9,7 @@ const AnchorComp = () => {
 
 	return (
 		<Anchor
-			// getContainer={() => document.getElementById("my-scroll-layout")}
-			// showInkInFixed={true}
-			// affix={true}
-			offsetTop='55'
-
+			offsetTop='70'
 			style={{ position: 'fixed', right: '10px', top: '500px' }}
 		>
 			<Link href="#1" title="Старт" />

@@ -7,14 +7,13 @@ import {
 	ClockCircleOutlined,
 	GlobalOutlined,
 	WalletOutlined,
-	CaretDownOutlined,
 	HomeOutlined,
 	MessageOutlined,
 	BarChartOutlined,
 	UserOutlined,
 	ToolOutlined,
 	FullscreenExitOutlined,
-	ExclamationCircleOutlined,
+	InfoCircleOutlined,
 } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 import mebel from '../components/cardComp/img/mebel.webp'
@@ -473,7 +472,7 @@ export const itemsMobil = [
 		key: 'otzyv',
 	},
 	{
-		label: (<ExclamationCircleOutlined />),
+		label: (<InfoCircleOutlined />),
 		key: 'info',
 		children: [
 			{

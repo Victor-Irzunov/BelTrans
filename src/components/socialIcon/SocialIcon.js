@@ -1,17 +1,20 @@
 import {
-	FacebookOutlined,
 	InstagramOutlined,
 	YoutubeOutlined,
-} from '@ant-design/icons';
-import { Tag } from 'antd';
-import React from 'react';
+} from '@ant-design/icons'
+import { Tag } from 'antd'
+import React from 'react'
+import Svg from './img/Svg.js'
+
 const SocialComp = () => (
 	<>
 		<Tag icon={<InstagramOutlined />} color="#e1306c">
-		Instagram
+			Instagram
 		</Tag>
-		<Tag icon={<FacebookOutlined />} color="#3b5999">
-			Facebook
+		<Tag icon={<Svg />}
+			color="transparent"
+			style={{ marginLeft: '.6em' }}
+		>
 		</Tag>
 		<Tag icon={<YoutubeOutlined />} color="#cd201f">
 			Youtube
@@ -19,3 +22,5 @@ const SocialComp = () => (
 	</>
 );
 export default SocialComp
+
+

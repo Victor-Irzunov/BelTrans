@@ -8,7 +8,7 @@ import ProgressBar from '../../components/progressBar/ProgressBar'
 import FormOrder from '../../components/formOrder/FormOrder'
 import CollapseComp from '../../components/collapseComp/CollapseComp'
 import StepComp from '../../components/stepComp/StepComp'
-import { Divider, Tag, Row, Col } from 'antd'
+import { Divider, Row, Col } from 'antd'
 import { useScreens } from '../../Constants/constants'
 
 function MainPage() {
@@ -31,33 +31,38 @@ function MainPage() {
 
 			<section className={css.main} id='1'>
 				<div className='container'>
+					<article>
+						<div className='main-title'>
+							<p>Оказываем услугу</p>
+							<h1>Грузоперевозки в Минске</h1>
+						</div>
 
-					<Row>
-						<Col lg={24}>
-							<Row
-								// gutter={{ xs: 8, sm: 32, md: 24, lg: 32 }}
-								style={{ marginTop: '2em' }}
-								gutter={[32, 32]}
-							>
-								<Col xs={24} sm={24} md={13}>
-									<CarouselSlider />
-								</Col>
-								<Col xs={15} sm={18} md={8}>
-									<ProgressBar />
-								</Col>
-							</Row>
-						</Col>
+						<Row>
+							<Col lg={24}>
+								<Row
+									// gutter={{ xs: 8, sm: 32, md: 24, lg: 32 }}
+									style={{ marginTop: '2em' }}
+									gutter={[32, 32]}
+								>
+									<Col xs={24} sm={24} md={13}>
+										<CarouselSlider />
+									</Col>
+									<Col xs={15} sm={18} md={8}>
+										<ProgressBar />
+									</Col>
+								</Row>
+							</Col>
 
-						<Col lg={24}>
-							<article>
+							<Col lg={24}>
+
 								{/* <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}> */}
-								<div className='main-title'>
+								{/* <div className='main-title'>
 									<p>Оказываем услугу</p>
 									<h1 id='2'>Грузоперевозки в Минске</h1>
-								</div>
+								</div> */}
 
 
-								<div className={css.mainBox2}>
+								<div id='2' className={css.mainBox2}>
 									<div
 										onClick={() => setIsActive(true)}
 									>
@@ -94,10 +99,11 @@ function MainPage() {
 									</div>
 								</div>
 								{/* </Row> */}
-							</article>
 
-						</Col>
-					</Row>
+
+							</Col>
+						</Row>
+					</article>
 				</div>
 			</section >
 		</>
