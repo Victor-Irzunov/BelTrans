@@ -1,6 +1,7 @@
 import { Collapse } from 'antd'
 import React from 'react'
 import BtnComp from '../btn/BtnComp'
+import NotificationComp from '../notificationBox/NotificationComp'
 const { Panel } = Collapse
 
 
@@ -63,7 +64,7 @@ const CollapseContactComp = () => {
 			</Panel>
 			<Panel header="Оставте свой номер телефона и мы Вам перезвоним" key="3">
 			<p style={{paddingLeft: 24,}}>
-				Нажмите <BtnComp total='здесь' /> и напишите в форме свой телефон.
+				Нажмите <NotificationComp text={'здесь'} type={'dashed'}  /> и напишите в форме свой телефон.
 			</p>
 			</Panel>
 		</Collapse>

@@ -5,10 +5,13 @@ import DescriptionsContactComp from '../../components/descriptionsContact/Descri
 import DescriptionsContactUnnComp from '../../components/descriptionsContact/DescriptionsContactUnnComp'
 import CollapseContactComp from '../../components/collapseContactComp/CollapseContactComp'
 import contact from './img/contact.webp'
+import { useScreens } from '../../Constants/constants'
+import NotificationComp from '../../components/notificationBox/NotificationComp'
+
 
 
 function ContactPage() {
-
+	const screens = useScreens()
 	const DivBox = (props) => <div className={`height-${props.value}`} style={{ paddingTop: '1em' }}>{props.children}</div>
 
 	return (
@@ -25,24 +28,27 @@ function ContactPage() {
 					</div>
 
 
-					<Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32, xl: 100 }} >
-						<Col xl={{ span: 6, offset: 1 }} style={{ background: '#f7f7f7', padding: '20px 30px', borderRadius: '10px' }}>
+					<Row
+						gutter={screens.xl ? { xl: 100 } : [24, 24]}
+						justify='center'
+					>
+						<Col xs={20} xl={{ span: 6, offset: 1 }} style={{ background: '#f7f7f7', paddingTop: '1.5em', paddingBottom: '1.5em', paddingLeft: '2em', borderRadius: '10px' }}>
 							<DescriptionsContactComp />
-							<Button type="primary" size='large'>Быстрый заказ</Button>
+							<NotificationComp text={'Быстрый заказ'} type={'primary'}  />
 						</Col>
-						<Col xl={17}>
+						<Col xs={20} xl={17}>
 							<Row gutter={[32, 32]}>
-								<Col xl={23} style={{ background: '#f7f7f7',  padding: '20px 30px', borderRadius: '10px' }}>
+								<Col xl={23} style={{ background: '#f7f7f7', paddingTop: '1.5em', paddingLeft: '2em', borderRadius: '10px' }}>
 									<DescriptionsContactUnnComp />
 								</Col>
-								<Col xl={23} style={{ margin: '0 auto' }}>
+								<Col xl={24}>
 									<Image
 										width={350}
 										src={contact}
-										style={{ borderRadius: '10px' }}
+										style={{ borderRadius: '5px' }}
 									/>
 								</Col>
-								<Col xl={23} style={{ padding: '20px 30px', borderRadius: '10px' }}>
+								<Col xl={23} style={{ paddingTop: '1.5em', paddingLeft: '2em', borderRadius: '10px' }}>
 									<DivBox >
 										<p style={{ fontSize: '2.2em', }}>Остались вопросы?</p>
 										<p style={{ fontSize: '1.3em', }}>Выберите удобный способ связи.</p>

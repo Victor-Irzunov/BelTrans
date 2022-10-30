@@ -1,5 +1,5 @@
 import {
-	PhoneOutlined,
+	// PhoneOutlined,
 	SmileOutlined
 } from '@ant-design/icons'
 import { Button, notification } from 'antd'
@@ -22,16 +22,15 @@ const openNotification = (placement) => {
 		duration: 0,
 	})
 }
-const NotificationComp = () => (
+const NotificationComp = ({ text, type, icon }) => (
 	<>
 		<Button
-			type="text"
+			type={type}
 			onClick={() => openNotification('top')}
-			icon={<PhoneOutlined />}
+			icon={icon}
 		>
-			Вам перезвонить?
+			{text}
 		</Button>
-
 
 	</>
 )

@@ -5,7 +5,8 @@ import AnchorComp from '../../anchorComp/AnchorComp'
 import { useLocation } from 'react-router-dom'
 import NotificationComp from '../../notificationBox/NotificationComp'
 import { Col, Row } from 'antd';
-import { PhoneFilled } from '@ant-design/icons'
+import { PhoneFilled,PhoneOutlined } from '@ant-design/icons'
+
 
 function HeaderAddress() {
 
@@ -64,7 +65,7 @@ function HeaderAddress() {
 							</Col>
 
 							<Col xs={20} sm={10} md={24} lg={24} xl={10}>
-								<NotificationComp />
+								<NotificationComp text={'Вам перезвонить?'} type={'text'} icon={<PhoneOutlined />} />
 							</Col>
 						</Row>
 					</Col>

@@ -52,8 +52,11 @@ const FormNotification = () => {
 					span: 16,
 				}}
 			>
-				<Button type="primary" htmlType="submit">
-					Ok
+				<Button
+					type="primary"
+					htmlType="submit"
+				>
+					OK
 				</Button>
 			</Form.Item>
 		</Form>
