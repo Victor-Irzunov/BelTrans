@@ -12,7 +12,6 @@ const DescriptionsComp = ({ descriptions }) => {
 			<Descriptions.Item label="Вес">
 
 				{`${descriptions?.mass}т до ${descriptions?.mass2}м`}<sup><small>3</small></sup>
-				{/* &nbsp; */}
 			</Descriptions.Item>
 			<Descriptions.Item label="1 час">{`${descriptions?.price}руб.`}</Descriptions.Item>
 			<Descriptions.Item label="1 км.">{`${descriptions?.km}руб.`}</Descriptions.Item>

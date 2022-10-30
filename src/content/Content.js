@@ -13,7 +13,7 @@ import {
 	UserOutlined,
 	ToolOutlined,
 	FullscreenExitOutlined,
-	InfoCircleOutlined,
+	IdcardOutlined,
 } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 import mebel from '../components/cardComp/img/mebel.webp'
@@ -362,6 +362,13 @@ export const items = [
 		key: 'otzyv',
 		icon: <MessageOutlined />,
 	},
+	{
+		label: (<Link to="/kontakty">
+			Контакты
+		</Link>),
+		key: 'contact',
+		icon: <IdcardOutlined />,
+	},
 ]
 
 export const dataArr = [
@@ -472,33 +479,10 @@ export const itemsMobil = [
 		key: 'otzyv',
 	},
 	{
-		label: (<InfoCircleOutlined />),
-		key: 'info',
-		children: [
-			{
-				key: '1',
-				label: `Пн-Сб 8:00-20:00`,
-			},
-			{
-				key: '2',
-				label: `г. Минск ул. Калинина 105`,
-			},
-			{
-				key: '3',
-				label: `+37529 333-33-33`,
-			},
-			{
-				type: 'divider',
-			},
-			{
-				key: '4',
-				label: `ИП "Беларус А.С.`,
-			},
-			{
-				key: '5',
-				label: `УНП: 600500650`,
-			},
-		],
+		label: (<Link to="/kontakty">
+			<IdcardOutlined />
+		</Link>),
+		key: 'contact',
 	},
 	{
 		label: (

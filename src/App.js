@@ -7,6 +7,7 @@ import Header from './components/header/Header'
 import MainPage from './pages/MainPage/MainPage'
 import ServicePage from './pages/ServicePage/ServicePage'
 import PerevozMebel from './pages/PerevozMebel/PerevozMebel'
+import ContactPage from './pages/ContactPage/ContactPage'
 import KvartirPereezd from './pages/KvartirPereezd/KvartirPereezd'
 import DostavkaGruz from './pages/DostavkaGruz/DostavkaGruz'
 import PerevozkaKrupnGruz from './pages/PerevozkaKrupnGruz/PerevozkaKrupnGruz'
@@ -67,6 +68,7 @@ const App = observer(() => {
                 <Route path='/uslugi/vyvoz-stroitelnogo-musora' element={<VyvozStroitMusor />} />
                 <Route path='/ceny' element={<CenyPage />} />
                 <Route path='/otzyvy' element={<OtzyvPage />} />
+                <Route path='/kontakty' element={<ContactPage />} />
 
                 <Route path='*' element={<ErrorPage />} />
               </Routes>

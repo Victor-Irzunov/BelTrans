@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from 'antd'
 
-const BtnComp = ({ total }) => {
+const BtnComp = ({ total, href, target }) => {
 	return (
-		<Button>{total}</Button>
+		<Button href={href} target={target}>{total}</Button>
 	)
 }
 export default BtnComp
