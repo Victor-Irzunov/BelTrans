@@ -30,10 +30,10 @@ const DescriptionsContactComp = () => {
 				</Space>
 			</Descriptions.Item>
 			<Descriptions.Item label="Телефон">
-				+375 29 333-33-33
+				+375 29 000-00-00
 			</Descriptions.Item>
 			<Descriptions.Item label="Телеграм">
-				@Victor_developer
+				@Victor_
 			</Descriptions.Item>
 			<Descriptions.Item label="Почта">
 				exemple@gmail.com

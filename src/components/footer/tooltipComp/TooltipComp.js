@@ -15,7 +15,7 @@ const TooltipComp = () => {
 						size="large"
 						href='tel:+375290000000'
 					/>
-					<a href='tel:+375290000000'>+37529 333-33-33</a>
+					<a href='tel:+375290000000'>+37529 000-00-00</a>
 				</div>
 			</Tooltip>
 			<Tooltip title="Рабочая почта">

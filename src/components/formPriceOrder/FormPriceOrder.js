@@ -29,7 +29,7 @@ const FormPriceOrder = ({ obj, setOpenModal, setSelectedRowKeys }) => {
 		}
 
 
-		let messageForm = `<b>Заказ с сайта</b>\n`
+		let messageForm = `<b>Заказ с сайта Транс</b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Дата: </b> ${data.date} \n`
 		messageForm += `<b>Что надо: </b> ${data.title}\n`
@@ -50,7 +50,7 @@ const FormPriceOrder = ({ obj, setOpenModal, setSelectedRowKeys }) => {
 			if (data.status === 200) {
 				message.success('Заказ принят')
 				setOpenModal(false)
-				form.resetFields();
+				form.resetFields()
 				setSelectedRowKeys([])
 			}
 		})
@@ -143,7 +143,8 @@ const FormPriceOrder = ({ obj, setOpenModal, setSelectedRowKeys }) => {
 						maxLength={100}
 						placeholder="Комментарий к заказу"
 					/>
-				</Form.Item>
+			</Form.Item>
+			
 
 				<Form.Item
 					wrapperCol={{

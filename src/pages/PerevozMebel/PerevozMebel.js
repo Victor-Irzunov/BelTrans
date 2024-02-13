@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Helmet } from "react-helmet"
 import css from './PerevozMebel.module.css'
 import mebel from './img/mebel.png'
 import DescriptionsComp from '../../components/descriptionsComp/DescriptionsComp'
 import DividerComp from '../../components/dividerComp/DividerComp'
 import { content, descriptions } from '../../content/Content'
-// import { Divider, Tag, Row, Col } from 'antd'
+import { Typography } from 'antd'
 // import { useScreens } from '../../Constants/constants'
 
 function PerevozMebel() {
   // const screens = useScreens()
+  const [editH1, setEditH1] = useState('Перевозка мебели в Минске')
   return (
     <>
       {/* Current break point:{' '}
@@ -31,7 +32,15 @@ function PerevozMebel() {
 
             <div className='main-title'>
               <p>Оказываем услугу</p>
-              <h1>Перевозка мебели в Минске</h1>
+              <Typography.Title
+                level={1}
+                editable={{
+                  onChange: setEditH1,
+                  triggerType: 'text'
+                }}
+              >
+                {editH1}
+              </Typography.Title>
             </div>
 
 

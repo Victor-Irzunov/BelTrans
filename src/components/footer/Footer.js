@@ -11,6 +11,9 @@ function Footer() {
 		<footer className={css.footer}>
 
 			<section className='container'>
+				<p className='' style={{ color: "#fff", textAlign: 'center', fontSize: '30px' }}>
+					Этот сайт новый, продаётся.
+				</p>
 				<div className={css.footerBox1}>
 					<TooltipComp />
 				</div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
-import { Row, Col, Button, Image } from 'antd'
+import { Row, Col, Image } from 'antd'
 import DescriptionsContactComp from '../../components/descriptionsContact/DescriptionsContactComp'
 import DescriptionsContactUnnComp from '../../components/descriptionsContact/DescriptionsContactUnnComp'
 import CollapseContactComp from '../../components/collapseContactComp/CollapseContactComp'
@@ -26,7 +26,6 @@ function ContactPage() {
 						<p>Инфо</p>
 						<h1>Контакты</h1>
 					</div>
-
 
 					<Row
 						gutter={screens.xl ? { xl: 100 } : [24, 24]}

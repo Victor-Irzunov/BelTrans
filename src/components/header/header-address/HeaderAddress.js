@@ -35,7 +35,7 @@ function HeaderAddress() {
 								</Col>
 								<Col xl={12}>
 									<p className={css.ipDel}>
-										ИП "Беларус А.С."
+										ИП "Беларус У.У."
 									</p>
 
 								</Col>
@@ -48,7 +48,7 @@ function HeaderAddress() {
 								<Col xl={12}>
 									<p>УНП:&nbsp;
 										<span>
-											600500650
+											600000000
 										</span>
 									</p>
 
@@ -60,7 +60,7 @@ function HeaderAddress() {
 						<Row align='middle'>
 							<Col xs={4} sm={14} md={24} lg={24} xl={14}>
 
-								<a className={css.headerPhone} href='tel:+375290000000'>+37529 333-33-33</a>
+								<a className={css.headerPhone} href='tel:+375290000000'>+37529 000-00-00</a>
 								<a className={css.headerPhone2} href='tel:+375290000000'><PhoneFilled /></a>
 							</Col>
 

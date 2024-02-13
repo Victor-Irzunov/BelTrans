@@ -20,6 +20,9 @@
 .ant-menu-horizontal > .ant-menu-item a:hover{
 	color: #f45e1e;
 }
+/* ---------- */
+
+/* -------------- */
 .ant-menu-horizontal > .ant-menu-submenu a{
 	color: #fff;
 }
@@ -39,7 +42,9 @@
 	padding: 0 17px;
 }
 
-
+div.ant-typography, .ant-typography p{
+margin-bottom: 0;
+}
 
 .ant-btn-primary {
 	color: #fff;

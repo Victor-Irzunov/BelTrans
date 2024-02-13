@@ -48,7 +48,7 @@ const FormOrder = () => {
 			check01: values.check01,
 			check02: values.check02,
 		}
-		let messageForm = `<b>Заказ с сайта</b>\n`
+		let messageForm = `<b>Заказ с сайта Транс</b>\n`
 		messageForm += `<b> </b>\n`
 		if (screens.xs) messageForm += `<b>Дата: </b> ${dataForm.dateMobil} \n`
 		if (!screens.xs) messageForm += `<b>Дата: </b> ${dataForm.date.from} — ${dataForm.date.before}\n`
@@ -168,6 +168,8 @@ const FormOrder = () => {
 						/>
 					</Form.Item>
 			}
+
+
 			<Form.Item
 				label="Выберите время"
 				name="time"
@@ -178,6 +180,10 @@ const FormOrder = () => {
 					}}
 				/>
 			</Form.Item>
+
+
+
+			
 			<Form.Item
 				label="Вес"
 				name="mass"

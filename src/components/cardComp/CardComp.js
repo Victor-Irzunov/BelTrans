@@ -1,8 +1,8 @@
-import { Card, Space, Badge } from 'antd';
+import { Card, Badge } from 'antd';
 import { Link } from 'react-router-dom'
 import React from 'react';
 import { card } from '../../content/Content'
-import { Divider, Tag, Row, Col } from 'antd'
+import { Row, Col } from 'antd'
 
 const { Meta } = Card
 
@@ -10,7 +10,6 @@ const CardComp = () => {
 
 	return (
 		<Row
-			// gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
 			gutter={[16, 16]}
 			justify='center'
 
