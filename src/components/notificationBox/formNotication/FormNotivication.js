@@ -12,7 +12,7 @@ const FormNotification = () => {
 	const onFinish = (values) => {
 		const data = { phone: values.tel, }
 
-		let messageForm = `<b>Перезвонить клиенту с сайта</b>\n`
+		let messageForm = `<b>Перезвонить клиенту с сайта Транс</b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Телефон: </b> ${data.phone}\n`
 
